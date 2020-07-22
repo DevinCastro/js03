@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .red {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1 id="myHeading">Hello World!</h1>
+  <div class="myDiv"></div>
+
+
+  <script>
+    // DOM document object model
+    // console.log(document)
+    
+    
+    // how to grab html with javescript
+  document.getElementById('myHeading').textContent = 'Goodbye World'
+
+  // add html to something you grab; use backticks
+  document.getElementById('myDiv').innerHTML = `
+    <input type = "text">
+    <button>Click Me </button>
+    `
+
+  document.getElementById('myHeading').classList.add('red')
+  
+
+
+  </script>
+</body>
+</html>

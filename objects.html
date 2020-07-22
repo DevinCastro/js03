@@ -16,8 +16,9 @@
       age: 2,
       // this gives a function on an object
       bark () {
-        console.log('Woof!')
-      }     
+        console.log(this)
+        console.log(`Woof! My name is ${this.name}`)
+      },
     }
 
     let cat = {
